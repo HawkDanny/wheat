@@ -96,7 +96,7 @@ Material:
     - _EnableStars: 0
     - _EnableStarsTwinkling: 0
     - _EnableSun: 0
-    - _EquatorHeight: 0.945
+    - _EquatorHeight: 0.5
     - _EquatorSmoothness: 0.01
     - _FogFill: 0.302
     - _FogHeight: 0.08
@@ -131,8 +131,8 @@ Material:
     - _CloudsShadowColor: {r: 0.4980392, g: 0.7450981, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EquatorColor: {r: 0.990566, g: 0.9784644, b: 0.7803044, a: 1}
-    - _GroundColor: {r: 0.78039217, g: 0.8980392, b: 0.6627451, a: 1}
+    - _EquatorColor: {r: 0.8490566, g: 0.82228416, b: 0.35644355, a: 1}
+    - _GroundColor: {r: 0.8018868, g: 0.6694998, b: 0.6694998, a: 1}
     - _MoonColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SkyColor: {r: 0.3920879, g: 0.8396226, b: 0.8396225, a: 1}
+    - _SkyColor: {r: 0.4801976, g: 0.9339623, b: 0.9339623, a: 1}
     - _SunColor: {r: 1, g: 1, b: 1, a: 1}
