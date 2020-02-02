@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    private Animator anim;
+    
+
     public Transform roadAxis;
     public float topSpeed;
     public float acceleration; //A small number that is added each frame the input is down
@@ -12,6 +15,8 @@ public class player : MonoBehaviour
 
     private void Start()
     {
+        anim = GetComponent<Animator> ();
+        
         velocity = Vector3.zero;
     }
 
@@ -52,12 +57,15 @@ public class player : MonoBehaviour
 
         if (velocity.magnitude > 0f)
         {
-            isWalking == true;
+            Debug.Log(anim);
+            anim.SetBool("isWalking", true);
             
+
         }
         else
         {
-            isWalking == false;
+            anim.SetBool("isWalking", false);
+            
         }
     }
 }
