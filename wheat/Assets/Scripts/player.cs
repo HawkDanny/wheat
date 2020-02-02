@@ -16,7 +16,6 @@ public class player : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator> ();
-        
         velocity = Vector3.zero;
     }
 
