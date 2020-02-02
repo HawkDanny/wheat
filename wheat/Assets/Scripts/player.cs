@@ -27,11 +27,6 @@ public class player : MonoBehaviour
             velocity += roadAxis.forward * acceleration * Time.deltaTime;
             moving = true;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            velocity -= roadAxis.forward * acceleration * Time.deltaTime;
-            moving = true;
-        }
         if (Input.GetKey(KeyCode.D))
         {
             velocity += roadAxis.right * acceleration * Time.deltaTime;
@@ -56,15 +51,11 @@ public class player : MonoBehaviour
 
         if (velocity.magnitude > 0f)
         {
-            Debug.Log(anim);
             anim.SetBool("isWalking", true);
-            
-
         }
         else
         {
             anim.SetBool("isWalking", false);
-            
         }
     }
 }
