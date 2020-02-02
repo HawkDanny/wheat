@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    public Transform roadAxis;
     public float topSpeed;
     public float acceleration; //A small number that is added each frame the input is down
     public float deceleration;
@@ -21,22 +22,22 @@ public class player : MonoBehaviour
         bool moving = false;
         if (Input.GetKey(KeyCode.W))
         {
-            velocity += this.transform.forward * acceleration * Time.deltaTime;
+            velocity += roadAxis.forward * acceleration * Time.deltaTime;
             moving = true;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            velocity -= this.transform.forward * acceleration * Time.deltaTime;
+            velocity -= roadAxis.forward * acceleration * Time.deltaTime;
             moving = true;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            velocity += this.transform.right * acceleration * Time.deltaTime;
+            velocity += roadAxis.right * acceleration * Time.deltaTime;
             moving = true;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            velocity -= this.transform.right * acceleration * Time.deltaTime;
+            velocity -= roadAxis.right * acceleration * Time.deltaTime;
             moving = true;
         }
         
