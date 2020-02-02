@@ -15,6 +15,12 @@ public class CoolCameraManager : MonoBehaviour
     private GameObject currentCamGameObject;
     private Cam currentCam;
 
+    private void Awake()
+    {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
+    }
+
     private void Start()
     {
         currentCam = Cam.Main;
@@ -40,6 +46,9 @@ public class CoolCameraManager : MonoBehaviour
     //THIS IS AN EXAMPLE, AND SHOULD BE REMOVED
     public void Update()
     {
+        if(Application.targetFrameRate != 60)
+              Application.targetFrameRate = 60;
+
         if (Input.GetKeyDown(KeyCode.Space))
             ChangeCamera(Cam.Tractor);
     }
