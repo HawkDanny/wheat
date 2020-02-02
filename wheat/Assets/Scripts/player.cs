@@ -49,5 +49,15 @@ public class player : MonoBehaviour
         }
 
         this.transform.Translate(velocity);
+
+        if (velocity.magnitude > 0f)
+        {
+            isWalking == true;
+            
+        }
+        else
+        {
+            isWalking == false;
+        }
     }
 }
