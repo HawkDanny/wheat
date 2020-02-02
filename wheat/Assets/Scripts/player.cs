@@ -9,12 +9,10 @@ public class player : MonoBehaviour
     public float acceleration; //A small number that is added each frame the input is down
     public float deceleration;
     private Vector3 velocity;
-    private Rigidbody rb;
 
     private void Start()
     {
         velocity = Vector3.zero;
-        rb = this.GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -50,6 +48,6 @@ public class player : MonoBehaviour
             velocity *= topSpeed;
         }
 
-        rb.MovePosition(this.transform.position + velocity);
+        this.transform.Translate(velocity);
     }
 }
