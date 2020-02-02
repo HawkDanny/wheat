@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf59e873ac198d945af3d567fa04bd74, type: 3}
+  m_Name: player2_footstep
+  m_EditorClassIdentifier: 
+  name: footstep
+  clip: {fileID: 8300000, guid: a5e5f72e937c6c345aa3ee567e2ab10a, type: 3}
+  alts:
+  - {fileID: 8300000, guid: 34db83ad8541e764481a21d506f86f63, type: 3}
+  - {fileID: 8300000, guid: 1850b727c88cc0b4eaf78b244c181cb6, type: 3}
+  volume: 1
+  pitch: 1
+  stereoPan: 0
+  spatialBlend: 1
+  volumeRolloff: 1
+  minDistance: 1
+  maxDistance: 50
+  loop: 0
+  playOnAwake: 0
+  source: {fileID: 0}
