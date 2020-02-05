@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - {fileID: 11400000, guid: f3780a0e42b00194da8a941624e4f67d, type: 2}
+  - {fileID: 11400000, guid: 7b66167a2394db049a807fc25760f2bb, type: 2}
   audioMixerGroup: {fileID: 0}

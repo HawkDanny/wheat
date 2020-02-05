@@ -42,14 +42,4 @@ public class CoolCameraManager : MonoBehaviour
         }
         currentCamGameObject.SetActive(true);
     }
-
-    //THIS IS AN EXAMPLE, AND SHOULD BE REMOVED
-    public void Update()
-    {
-        if(Application.targetFrameRate != 60)
-              Application.targetFrameRate = 60;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-            ChangeCamera(Cam.Tractor);
-    }
 }
