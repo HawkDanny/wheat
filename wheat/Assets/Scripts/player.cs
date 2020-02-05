@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -17,10 +18,17 @@ public class player : MonoBehaviour
     {
         anim = GetComponent<Animator> ();
         velocity = Vector3.zero;
+        Cursor.visible = false;
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+
+        if (Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene("VarunTest - Copy");
+
         bool moving = false;
         if (Input.GetKey(KeyCode.W))
         {
